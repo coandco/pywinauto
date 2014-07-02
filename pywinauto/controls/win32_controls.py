@@ -34,7 +34,6 @@ from pywinauto import win32structures
 #from pywinauto import findbestmatch
 from pywinauto import controlproperties
 
-from pywinauto import tests
 from pywinauto.timings import Timings
 
 #====================================================================
@@ -747,7 +746,10 @@ class DialogWrapper(HwndWrapper.HwndWrapper):
     #-----------------------------------------------------------
     def RunTests(self, tests_to_run = None, ref_controls = None):
         "Run the tests on dialog"
-
+        
+        # Moved the import inside this function to fix py2exe issues
+        from pywinauto import tests
+        
         # get all the controls
         controls = [self] + self.Children()
         
