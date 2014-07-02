@@ -275,7 +275,7 @@ def get_control_names(control, allcontrols):
     #if hasattr(control, 'ref') and control.ref:
     #    control = control.ref
 
-    # Add the control based on it's friendly class name
+    # Add the control based on its friendly class name
     names.append(control.FriendlyClassName())
 
     # if it has some character text then add it base on that
@@ -301,7 +301,7 @@ def get_control_names(control, allcontrols):
 
 #====================================================================
 class UniqueDict(dict):
-    "A dictionary subclass that handles making it's keys unique"
+    "A dictionary subclass that handles making its keys unique"
     def __setitem__(self, text, item):
         "Set an item of the dictionary"
 
