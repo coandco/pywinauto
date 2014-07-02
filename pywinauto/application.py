@@ -1058,6 +1058,12 @@ class Application(object):
         "Should not be used - part of application data implementation"
         return self.match_history[index]
 
+    def GetCurrentProcess(self):
+        "Allow programmatic access to the currently-connected process id"
+        if not self.process:
+            raise AppNotConnected("Please use start_ or connect_ before "
+                "trying anything else")
+        return self.process
 
     def Kill_(self):
         """Try and kill the application
