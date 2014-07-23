@@ -6,7 +6,7 @@ Released under the LGPL licence
 What is it
 ----------
 pywinauto is a set of python modules to automate the Microsoft Windows GUI. 
-At it's simplest it allows you to send mouse and keyboard actions to windows 
+At its simplest, it allows you to send mouse and keyboard actions to windows 
 dialogs and controls.
 
 
